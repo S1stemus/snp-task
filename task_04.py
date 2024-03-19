@@ -3,15 +3,15 @@ def sort_list(lst):
         return []
     maxnum=max(lst)
     minnum=min(lst)
-    lst.remove(max(lst))
-    lst.remove(min(lst))
-    res=[]
-    res.append(maxnum)
-    for element in lst:
-        res.append(element)
-    res.append(minnum)
-    res.append(minnum)
-    return res
-print(sort_list([]))
+    minindex=[i for i, j in enumerate(lst) if j == minnum]
+    maxindex=[i for i, j in enumerate(lst) if j == maxnum]
+    for i in minindex:
+        lst[i]=maxnum
+    for i in maxindex:
+        lst[i]=minnum
+    lst.append(minnum)
+    return lst
+list=[1, 2, 1, 3]
+print(sort_list([1]))
 
 
