@@ -1,5 +1,5 @@
-def is_palindrome(word:str):
-    word=word.lower()
+def is_palindrome(word):
+    word=str(word).lower()
     filterword=""
     alphabet=" !?.,'\"-:;"   
     for char in word:
@@ -9,6 +9,5 @@ def is_palindrome(word:str):
         if filterword[i]!=filterword[len(filterword)-i-1]:
             return False
     return True
-word=input()
-print(is_palindrome(word))
+print(is_palindrome(None))
     
