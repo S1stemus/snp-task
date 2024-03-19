@@ -22,6 +22,8 @@ class Desert:
         if self.calories <200:
             return True
         else:
-            return True
+            return False
     def isdelicious(self):      
         return True
+d=Desert("apple", 300)
+print(d.ishealthy())
