@@ -14,4 +14,5 @@ class Jellybean(Desert):
             return False
         else:
             return True
-
+j=Jellybean("apple", 300, "black licorice")
+print(j.is_delicious())

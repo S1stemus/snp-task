@@ -25,5 +25,3 @@ class Desert:
             return False
     def isdelicious(self):      
         return True
-d=Desert("apple", 300)
-print(d.ishealthy())
