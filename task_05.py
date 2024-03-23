@@ -4,5 +4,5 @@ def date_in_future(integer=None):
         result= datetime.datetime.now() + datetime.timedelta(days=integer)
         return result.strftime("%d-%m-%Y %H:%M:%S")        
     else:
-        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 print(date_in_future([]))

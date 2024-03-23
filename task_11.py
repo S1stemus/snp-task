@@ -1,4 +1,4 @@
-class Desert:
+class Dessert:
     def __init__(self, name=None, calories=None):
         if isinstance(name, str) and isinstance(calories, int):
             self.name = name
