@@ -18,10 +18,10 @@ class Dessert:
     @calories.setter
     def calories(self, value):
         self.__calories = value
-    def ishealthy(self):
+    def is_healthy(self):
         if self.calories <200:
             return True
         else:
             return False
-    def isdelicious(self):      
+    def is_delicious(self):      
         return True
